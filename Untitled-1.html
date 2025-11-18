@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio --- Wael Zidane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style .css">
+</head>
+<body>
+
+
+    <header class="navbar">
+        <div class="logo">Wael<span>Portfolio</span></div>
+    </header>
+
+    <section id="principale" class="hero">
+        <div class="video-container">
+            <video id="hero-video" class="hero-video" autoplay muted loop playsinline>
+                <source src="portfolio.mp4" type="video/mp4">
+            
+            </video>
+        </div>
+
+
+    
+
+            <button id="sound-toggle" class="sound-btn">
+                <span class="icon" id="sound-icon">🔇</span>
+                <span id="sound-label">Activer le son</span>
+            </button>
+    </section>
+
+    <section id="certificats" class="section">
+        <h2>Certificats</h2>
+        <p class="section-intro">
+            Quelques certificats techniques obtenus en ligne, en complément de ma formation d’ingénieur.
+        </p>
+
+        <div class="cert-list">
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+
+                    <img src="git.png" >
+                </div>
+                <div class="cert-title">Introduction to Git and GitHub</div>
+                <div class="cert-org">Google · Coursera · Avril 2025</div>
+                <div class="cert-desc">
+                    Bases de Git, gestion de versions et utilisation de GitHub pour collaborer sur des projets.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/DB7VSSFYBEQD" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+                    <img src="Virtual Network in Azure.png" >
+                </div>
+                <div class="cert-title">Virtual Networks in Azure</div>
+                <div class="cert-org">Whizlabs · Coursera · Avril 2025</div>
+                <div class="cert-desc">
+                    Concepts de base des réseaux virtuels dans Microsoft Azure : sous-réseaux, sécurité et routage.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/24PTCY14ZFE9" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+                    <img src="CSS3.png">
+                </div>
+                <div class="cert-title">Introduction to CSS3</div>
+                <div class="cert-org">University of Michigan · Coursera · Janvier 2025</div>
+                <div class="cert-desc">
+                    Mise en forme avancée des pages web avec CSS3 : flexbox, responsive design et bonnes pratiques.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/8Y9U1RDGCM1C" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+                    <img src="react native.png" >
+                </div>
+                <div class="cert-title">React Native</div>
+                <div class="cert-org">Meta · Coursera · Avril 2025</div>
+                <div class="cert-desc">
+                    Développement d’applications mobiles multiplateforme avec React Native et l’écosystème JavaScript.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/5F2MGGYEELQL" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+                    <img src="Introduction to Java and Object-Oriented.png" >
+                </div>
+                <div class="cert-title">Introduction to Java and Object-Oriented Programming</div>
+                <div class="cert-org">University of Pennsylvania · Coursera · Janvier 2025</div>
+                <div class="cert-desc">
+                    Principes de la programmation orientée objet en Java : classes, objets, héritage et bonnes pratiques.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/8XRJCJ14MURB" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+
+            <div class="cert-card">
+                <div class="cert-image-wrapper">
+                    <img src="Introduction to Containers Docker, Kubernetes.png" >
+                </div>
+                <div class="cert-title">Introduction to Containers with Docker, Kubernetes & OpenShift</div>
+                <div class="cert-org">IBM · Coursera · Avril 2025</div>
+                <div class="cert-desc">
+                    Introduction aux conteneurs, à Docker, à Kubernetes et à OpenShift : concepts, cas d’usage et déploiements.
+                </div>
+                <a class="cert-link" href="https://coursera.org/verify/XFUP71MXWSZR" target="_blank">
+                    Voir le certificat
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <script>
+        const video = document.getElementById("hero-video");
+        const btnSound = document.getElementById("sound-toggle");
+        const icon = document.getElementById("sound-icon");
+        const label = document.getElementById("sound-label");
+
+        let isMuted = true;
+
+        btnSound.addEventListener("click", () => {
+            isMuted = !isMuted;
+            video.muted = isMuted;
+            video.play(); 
+
+            if (isMuted) {
+                icon.textContent = "🔇";
+                label.textContent = "Activer le son";
+            } else {
+                icon.textContent = "🔊";
+                label.textContent = "Couper le son";
+            }
+        });
+    </script>
+
+</body>
+</html>
