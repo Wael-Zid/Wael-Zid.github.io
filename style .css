@@ -267,10 +267,12 @@
             }
 
             .sound-btn {
-                left: 20px;
+                left: 50px;
+                transform: translateX(-50%)
                 bottom: 20px;
             }
         }
+
 
 
 
